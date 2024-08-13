@@ -80,7 +80,49 @@ The PyICL library offers tools to manage and utilize these contextual examples e
 - **NLP Integration**: Leverage NLP techniques to create adversarial examples or synthetic data.
 - **Diversity Enhancement**: Increase the variety of examples to make the LLM more adaptable to different inputs.
 
-**Usage**: This component is particularly useful in scenarios where the diversity of examples is critical, such as in adversarial settings or when working with limited data.
+## 8. Usage
+This component is particularly useful in scenarios where the diversity of examples is critical, such as in adversarial settings or when working with limited data.
+
+Here is a simple example of how to use PyICL:
+
+```python
+from pyicl import ContextManager, PromptBuilder
+
+context_manager = ContextManager()
+prompt_builder = PromptBuilder(context_manager)
+
+# Add examples to a context
+context_manager.add_context("medical", ["Patient has a headache and dizziness."])
+
+# Build a prompt
+user_input = "Patient has a sore throat and fever."
+prompt = prompt_builder.build_prompt("medical", user_input)
+
+print(prompt)
+```
+
+## Running Tests
+
+To run tests, use:
+
+```bash
+python -m unittest discover tests
+```
+
+
+## 9. Execution
+
+Installation and execution are simple, using Python 3.x. Just clone the repository and run the tests to verify that everything is working correctly.
+
+### Next Steps
+
+- **Expand ContextManager**: Add support for persistence in a database.
+- **Optimization**: Create the `ContextOptimizer` to automatically adjust examples.
+- **API Integration**: Develop a RESTful API to access the components remotely.
+- **Graphical Interface**: Implement an interface for interactive use.
+
+With this initial structure, you can start building on top of it, integrating more features, and optimizing it for specific use cases.
+
 
 ## Summary
 
