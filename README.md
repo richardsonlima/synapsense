@@ -80,7 +80,7 @@ The PyICL library offers tools to manage and utilize these contextual examples e
 - **NLP Integration**: Leverage NLP techniques to create adversarial examples or synthetic data.
 - **Diversity Enhancement**: Increase the variety of examples to make the LLM more adaptable to different inputs.
 
-## 8. Usage
+## Usage
 This component is particularly useful in scenarios where the diversity of examples is critical, such as in adversarial settings or when working with limited data.
 
 Here is a simple example of how to use PyICL:
@@ -110,7 +110,7 @@ python -m unittest discover tests
 ```
 
 
-## 9. Execution
+## Execution
 
 Installation and execution are simple, using Python 3.x. Just clone the repository and run the tests to verify that everything is working correctly.
 
