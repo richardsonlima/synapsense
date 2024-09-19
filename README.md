@@ -1,5 +1,8 @@
 # PyICL Overview
 
+## Demo
+![Alt text](ttyrecord.gif) 
+
 **PyICL** (Python In-Context Learning) is a Python library designed to facilitate the implementation of In-Context Learning (ICL) with Large Language Models (LLMs). In-Context Learning refers to the technique where a model is provided with examples within the context of its input, allowing the model to learn from these examples without the need for explicit fine-tuning. The idea is to leverage contextual examples to influence the model's output dynamically.
 
 The PyICL library offers tools to manage and utilize these contextual examples efficiently, providing a structured way to build prompts and optimize the context provided to the LLM. PyICL is modular, allowing developers to pick and choose components based on their needs.
