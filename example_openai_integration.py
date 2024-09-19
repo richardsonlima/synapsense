@@ -2,9 +2,6 @@
 import os
 import openai
 from openai import OpenAI
-
-client = OpenAI()
-from openai import OpenAI
 from pyicl import ContextManager, PromptBuilder
 
 # Load API key from environment variable
