@@ -1,3 +1,4 @@
+
 import os
 import openai
 from openai import OpenAI
@@ -27,6 +28,37 @@ def create_prompt_builder(context_manager: ContextManager) -> PromptBuilder:
 def add_context(context_manager: ContextManager, context_type: str, examples: list[str]) -> None:
     """Add context examples to the context manager."""
     context_manager.add_context(context_type, examples)
+
+# def call_openai_api(api_key: str, model: str, prompt: str, max_tokens: int, temperature: float) -> str:
+#     """Call the OpenAI API to generate a response."""
+#     try:
+#         response = openai.Model(model).completions(
+#         #response = client.create_completion(
+#             prompt=prompt,
+#             max_tokens=max_tokens,
+#             temperature=temperature
+#         )
+#         return response.choices[0].text
+#     except Exception as e:
+#         print(f"Error: {e}")
+#         return None
+
+# def call_openai_api(model: str, prompt: str, max_tokens: int, temperature: float) -> str:
+#     """Call the OpenAI API to generate a response."""
+#     try:
+#         response = openai.Chat.create(
+#             model=model,
+#             messages=[
+#                 {"role": "system", "content": "You are a helpful assistant."},
+#                 {"role": "user", "content": prompt}
+#             ],
+#             max_tokens=max_tokens,
+#             temperature=temperature
+#         )
+#         return response.choices[0].message["content"]
+#     except Exception as e:
+#         print(f"Error: {e}")
+#         return None
 
 def call_openai_api(model: str, prompt: str, max_tokens: int, temperature: float) -> str:
     """Call the OpenAI API to generate a response."""

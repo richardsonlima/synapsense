@@ -1,0 +1,54 @@
+# Ignorar arquivos de configuração e credenciais
+.env
+
+# Ignorar diretórios de ambiente virtual
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+
+# Ignorar logs e arquivos temporários
+*.log
+*.tmp
+*.swp
+*.swo
+*.DS_Store
+
+# Ignorar arquivos de configuração do editor
+.idea/
+.vscode/
+
+# Ignorar arquivos de cache do Jupyter Notebook
+.ipynb_checkpoints/
+
+# Ignorar pastas de build e dist
+build/
+dist/
+*.egg-info/
+
+# Ignorar caches de dados do Streamlit
+.streamlit/
+.cache/
+
+# Ignorar chaves SSH e credenciais de acesso
+*.pem
+*.key
+
+# Ignorar arquivos de saída do Jupyter Notebook
+*.out
+
+# Ignorar arquivos de banco de dados
+*.db
+
+# Ignorar arquivos do PyCharm
+*.iml
+*.iws
+*.ipr
+
+# Ignorar arquivos do MacOS
+.DS_Store
+
+# Ignorar arquivos do Windows
+Thumbs.db
+desktop.ini
