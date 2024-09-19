@@ -112,7 +112,26 @@ python -m unittest discover tests
 
 ## Execution
 
-Installation and execution are simple, using Python 3.x. Just clone the repository and run the tests to verify that everything is working correctly.
+Installation and execution are simple, using Python 3.11. Just clone the repository and run the tests to verify that everything is working correctly.
+
+```bash
+python3 example_openai_integration.py
+
+Prompt for medical: A patient is experiencing symptoms of chest pain and shortness of breath.
+Model Output: Subject: Urgent Medical Consultation Required: Chest Pain and Shortness of Breath
+
+Dear [Doctor's Name],
+
+I hope this message finds you well.
+
+I am writing on behalf of a patient who has been experiencing some worrisome symptoms recently and we are seeking your immediate advice. The patient has reported persistent chest pain along with shortness of breath.
+
+The chest pain is described as a pressure-like discomfort that is not localized to any one spot and seems to be constant. The patient also experiences shortness of breath even while at rest, which is a new development.
+
+The patient does not have any known pre-existing heart conditions but these symptoms are causing significant concern.
+
+Could you kindly advise on the urgency of this matter and the necessary
+```
 
 ### Next Steps
 
