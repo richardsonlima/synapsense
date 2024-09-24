@@ -10,7 +10,7 @@ setup(
     url='https://github.com/richardsonlima/PyICL.git',
     packages=find_packages(),
     install_requires=['openai==1.46.0', 'nltk', 'stopwords'],
-    license='BSD-3-Clause',
+    license='BSD License',
     python_requires='>=3.8',
     classifiers=[
         'Development Status :: 5 - Production/Stable',
