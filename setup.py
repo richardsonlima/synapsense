@@ -1,13 +1,13 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='pyicl',
+    name='synapsense',
     version='1.0.0',
     author='Richardson Lima',
     author_email='contato@richardsonlima.com.br',
-    description='pyicl (Python In-Context Learning) is a Python library designed to facilitate the implementation of In-Context Learning (ICL) with Large Language Models (LLMs).',
+    description='synapsense (Python In-Context Learning) is a Python library designed to facilitate the implementation of In-Context Learning (ICL) with Large Language Models (LLMs).',
     long_description=open('README.md').read(),
-    url='https://github.com/richardsonlima/pyicl.git',
+    url='https://github.com/richardsonlima/synapsense.git',
     packages=find_packages(),
     install_requires=['openai==1.46.0', 'nltk', 'stopwords'],
     license='BSD License',

@@ -1,7 +1,7 @@
 import os
 import openai
 from openai import OpenAI
-from pyicl import ContextManager, PromptBuilder, ContextOptimizer
+from synapsense import ContextManager, PromptBuilder, ContextOptimizer
 import nltk
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
