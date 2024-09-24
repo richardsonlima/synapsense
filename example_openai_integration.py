@@ -1,7 +1,7 @@
 import os
 import openai
 from openai import OpenAI
-from pyicl import ContextManager, PromptBuilder
+from src import ContextManager, PromptBuilder
 
 # Load API key from environment variable
 api_key = os.environ.get("OPENAI_API_KEY")
@@ -24,7 +24,7 @@ def create_context_manager() -> ContextManager:
     Create a context manager instance.
     
     Returns:
-        ContextManager: An instance of the context manager from PyICL.
+        ContextManager: An instance of the context manager from synapsense.
     """
     # Assuming ContextManager is a custom class
     return ContextManager()
@@ -37,7 +37,7 @@ def create_prompt_builder(context_manager: ContextManager) -> PromptBuilder:
         context_manager (ContextManager): The context manager instance to be used by the prompt builder.
 
     Returns:
-        PromptBuilder: An instance of the prompt builder from PyICL.
+        PromptBuilder: An instance of the prompt builder from synapsense.
     """
     # Assuming PromptBuilder is a custom class
     return PromptBuilder(context_manager)

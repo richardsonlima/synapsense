@@ -1,7 +1,7 @@
 import unittest
-from pyicl import ContextManager, PromptBuilder
+from src import ContextManager, PromptBuilder
 
-class TestPyICL(unittest.TestCase):
+class Testsynapsense(unittest.TestCase):
     def test_add_and_retrieve_context(self):
         cm = ContextManager()
         cm.add_context("test", ["example1", "example2"])
