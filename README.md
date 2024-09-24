@@ -1,13 +1,13 @@
-# PyICL Overview
+# pyicl Overview
 
 ## Demo
 ![Alt text](ttyrecord.gif) 
 
-**PyICL** (Python In-Context Learning) is a Python library designed to facilitate the implementation of In-Context Learning (ICL) with Large Language Models (LLMs). In-Context Learning refers to the technique where a model is provided with examples within the context of its input, allowing the model to learn from these examples without the need for explicit fine-tuning. The idea is to leverage contextual examples to influence the model's output dynamically.
+**pyicl** (Python In-Context Learning) is a Python library designed to facilitate the implementation of In-Context Learning (ICL) with Large Language Models (LLMs). In-Context Learning refers to the technique where a model is provided with examples within the context of its input, allowing the model to learn from these examples without the need for explicit fine-tuning. The idea is to leverage contextual examples to influence the model's output dynamically.
 
-The PyICL library offers tools to manage and utilize these contextual examples efficiently, providing a structured way to build prompts and optimize the context provided to the LLM. PyICL is modular, allowing developers to pick and choose components based on their needs.
+The pyicl library offers tools to manage and utilize these contextual examples efficiently, providing a structured way to build prompts and optimize the context provided to the LLM. pyicl is modular, allowing developers to pick and choose components based on their needs.
 
-## Components of PyICL
+## Components of pyicl
 
 ### 1. ContextManager
 
@@ -54,18 +54,18 @@ The PyICL library offers tools to manage and utilize these contextual examples e
 
 ### 5. IntegrationAPI (Planned)
 
-**Purpose**: The `IntegrationAPI` is meant to facilitate the integration of PyICL with other applications and frameworks, making it easier to use in production environments.
+**Purpose**: The `IntegrationAPI` is meant to facilitate the integration of pyicl with other applications and frameworks, making it easier to use in production environments.
 
 **Key Features** (Planned):
-- **RESTful API**: Provide a REST API for accessing PyICL components remotely.
+- **RESTful API**: Provide a REST API for accessing pyicl components remotely.
 - **ML Pipeline Integration**: Seamlessly integrate with machine learning pipelines in frameworks like TensorFlow or PyTorch.
-- **Deployment Support**: Tools for deploying PyICL in production environments.
+- **Deployment Support**: Tools for deploying pyicl in production environments.
 
-**Usage**: This component would be crucial for teams looking to deploy PyICL in large-scale applications or integrate it with existing systems, enabling more widespread adoption.
+**Usage**: This component would be crucial for teams looking to deploy pyicl in large-scale applications or integrate it with existing systems, enabling more widespread adoption.
 
 ### 6. UserInterface (Planned)
 
-**Purpose**: The `UserInterface` would provide a graphical interface for interacting with PyICL, making it accessible to non-technical users.
+**Purpose**: The `UserInterface` would provide a graphical interface for interacting with pyicl, making it accessible to non-technical users.
 
 **Key Features** (Planned):
 - **Context Management UI**: A visual interface to manage contexts and examples.
@@ -86,7 +86,7 @@ The PyICL library offers tools to manage and utilize these contextual examples e
 ## Usage
 This component is particularly useful in scenarios where the diversity of examples is critical, such as in adversarial settings or when working with limited data.
 
-Here is a simple example of how to use PyICL:
+Here is a simple example of how to use pyicl:
 
 ```python
 from pyicl import ContextManager, PromptBuilder
@@ -148,4 +148,4 @@ With this initial structure, you can start building on top of it, integrating mo
 
 ## Summary
 
-PyICL is designed to provide a structured and modular approach to managing context in applications that utilize Large Language Models. By offering tools to manage, build, optimize, and experiment with contextual examples, PyICL aims to make In-Context Learning more accessible and effective, allowing users to maximize the potential of LLMs in various use cases. The planned components, such as ContextOptimizer and ExperimentTracker, will further enhance the library’s capabilities, making it a comprehensive solution for context-aware LLM applications.
+pyicl is designed to provide a structured and modular approach to managing context in applications that utilize Large Language Models. By offering tools to manage, build, optimize, and experiment with contextual examples, pyicl aims to make In-Context Learning more accessible and effective, allowing users to maximize the potential of LLMs in various use cases. The planned components, such as ContextOptimizer and ExperimentTracker, will further enhance the library’s capabilities, making it a comprehensive solution for context-aware LLM applications.
