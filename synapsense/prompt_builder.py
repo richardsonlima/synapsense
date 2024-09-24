@@ -1,3 +1,9 @@
+import nltk
+nltk.download('stopwords')
+from nltk.corpus import stopwords
+
+from .context_manager import ContextManager
+
 class PromptBuilder:
     """
     A class used to build prompts based on user input and context examples.

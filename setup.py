@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='synapsense',
-    version='1.0.0',
+    version='1.0.2',
     author='Richardson Lima',
     author_email='contato@richardsonlima.com.br',
     description='SynapSense (Python In-Context Learning) is a Python library designed to facilitate the implementation of In-Context Learning (ICL) with Large Language Models (LLMs).',
