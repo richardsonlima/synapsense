@@ -7,10 +7,30 @@ from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 
+
+def call_openai_api(model, prompt, max_tokens, temperature):
+    """Calls the OpenAI API and returns the response."""
+    try:
+        response = openai.ChatCompletion.create(
+            model=model,
+            messages=[{"role": "user", "content": prompt}],
+            max_tokens=max_tokens,
+            temperature=temperature
+        )
+        return response.choices[0].message['content']
+    except Exception as e:
+        print(f"Error while calling OpenAI API: {e}")
+        return None
+
+
 def main():
     # Load API key from environment variable
     api_key = os.environ.get("OPENAI_API_KEY")
-    client = openai.Client(api_key=api_key)
+    if not api_key:
+        print("Error: OPENAI_API_KEY environment variable is not set.")
+        return
+
+    openai.api_key = api_key
 
     # Create a ContextManager instance
     context_manager = ContextManager()
@@ -49,6 +69,7 @@ def main():
     prompt = prompt_builder.build_prompt("medical", user_input)
 
     # Print the built prompt
+    print("Built Prompt:")
     print(prompt)
 
     # Call OpenAI API
@@ -59,10 +80,11 @@ def main():
 
     # Print the model's response
     if response is not None:
-        print("Model Output:")
+        print("\nModel Output:")
         print(response)
     else:
         print("Failed to retrieve model response.")
+
 
 if __name__ == "__main__":
     main()

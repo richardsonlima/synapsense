@@ -1,18 +1,15 @@
 from setuptools import setup, find_packages
 
-with open('README.md', 'r', encoding='utf-8') as fh:
-    long_description = fh.read()
-
 setup(
     name='synapsense',
     version='1.0.0',
     author='Richardson Lima',
     author_email='contato@richardsonlima.com.br',
     description='SynapSense (Python In-Context Learning) is a Python library designed to facilitate the implementation of In-Context Learning (ICL) with Large Language Models (LLMs).',
-    long_description=long_description,
-    long_description_content_type='text/markdown',  # Specify content type as Markdown
+    long_description=open('README.md', 'r', encoding='utf-8').read(),
+    long_description_content_type='text/markdown',
     url='https://github.com/richardsonlima/synapsense.git',
-    packages=find_packages(),
+    packages=find_packages(include=['synapsense', 'synapsense.*']),
     install_requires=['openai==1.46.0', 'nltk', 'stopwords'],
     license='BSD License',
     python_requires='>=3.8',
