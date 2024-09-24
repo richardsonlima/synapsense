@@ -9,7 +9,7 @@ setup(
     long_description=open('README.md').read(),
     url='https://github.com/richardsonlima/PyICL.git',
     packages=find_packages(),
-    install_requires=['openai==1.46.0','nltk', 'stopwords'],
+    install_requires=['pyicl','openai==1.46.0','nltk', 'stopwords'],
     license='BSD-3-Clause',
     classifiers=[
         'Development Status :: 5 - Production/Stable',
