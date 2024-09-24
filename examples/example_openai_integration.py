@@ -4,7 +4,7 @@ from openai import OpenAI
 
 client = OpenAI()
 from openai import OpenAI
-from pyicl import ContextManager, PromptBuilder
+from synapsense import ContextManager, PromptBuilder
 
 # Load API key from environment variable
 api_key = os.environ.get("OPENAI_API_KEY")

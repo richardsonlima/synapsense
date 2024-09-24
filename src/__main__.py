@@ -1,6 +1,6 @@
 import os
 import openai
-from pyicl import ContextManager, PromptBuilder, ContextOptimizer
+from synapsense import ContextManager, PromptBuilder, ContextOptimizer
 import nltk
 nltk.download('stopwords')
 from nltk.tokenize import word_tokenize
