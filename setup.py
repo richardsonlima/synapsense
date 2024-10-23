@@ -10,7 +10,7 @@ setup(
     long_description_content_type='text/markdown',
     url='https://github.com/richardsonlima/synapsense.git',
     packages=find_packages(include=['synapsense', 'synapsense.*']),
-    install_requires=['openai==1.46.0', 'nltk', 'stopwords'],
+    install_requires=['openai>=1.46.0', 'nltk', 'stopwords'],
     license='BSD License',
     python_requires='>=3.8',
     classifiers=[
