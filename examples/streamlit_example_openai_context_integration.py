@@ -98,6 +98,6 @@ else:
         prompt = prompt_builder.build_prompt(context_type, user_input)
         
         # Call OpenAI API with the generated prompt
-        response = call_openai_api(model="gpt-4", prompt=prompt, max_tokens=150, temperature=0.7)
+        response = call_openai_api(model="gpt-4o", prompt=prompt, max_tokens=150, temperature=0.7)
         st.write("Response:")
         st.write(response)
