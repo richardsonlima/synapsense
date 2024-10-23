@@ -121,7 +121,7 @@ def main() -> None:
     print(prompt)
 
     # Call OpenAI API
-    model = "gpt-3.5-turbo"
+    model = "gpt-4o"
     max_tokens = 2048
     temperature = 0.7
     response = call_openai_api(model, prompt, max_tokens, temperature)
