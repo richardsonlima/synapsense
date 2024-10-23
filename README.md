@@ -1,4 +1,4 @@
-# synapsense Overview
+# Synapsense Overview
 
 **SynapSense** Python In-Context Learning for Large Language Models
 SynapSense is a cutting-edge Python library designed to streamline the implementation of In-Context Learning (ICL) with Large Language Models (LLMs). By combining the concept of "synapse" (neural connections) with "sense," SynapSense empowers developers to build intelligent, sense-making models that leverage contextual information for more accurate and dynamic learning. Whether you’re working with natural language processing, AI-driven applications, or advanced machine learning projects, SynapSense provides an intuitive, scalable framework for enhancing LLM performance with in-context capabilities.
